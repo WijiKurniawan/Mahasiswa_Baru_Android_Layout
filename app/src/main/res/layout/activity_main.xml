@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="Formulir Pendaftaran mahasiswa baru Multi Data Palembang"
+        android:textColor="#2196F3"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/et_nomor_pendaftaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor Pendaftaran"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Calon mahasiswa"
+        android:inputType="text"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin :"
+        android:textSize="17sp"
+        android:layout_marginTop="6dp">
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/rg_jk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_pria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Pria"
+            android:textSize="17sp" />
+        <RadioButton
+            android:id="@+id/rb_wanita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wanita"
+            android:textSize="17sp"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAFTAR"
+        android:layout_marginTop="32dp"/>
+</LinearLayout>
